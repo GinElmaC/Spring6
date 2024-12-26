@@ -1,0 +1,23 @@
+# Project exclude paths
+/dynamic-proxy-jdk/target/
+/factory-method/target/
+/mySpring/target/
+/review-annotation/target/
+/review-reflect/target/
+/simple-factory/target/
+/spring6-001-revelation/target/
+/spring6-002-first/target/
+/spring6-003-injection/target/
+/spring6-011-realapp/target/
+/spring-005-scope/target/
+/spring-006-bean-instantiation/target/
+/spring-007-lifecycle/target/
+/spring-008-CycleIoc/target/
+/spring-009-annotion/target/
+/spring-010-aspectj-aop-anno/target/
+/spring-012-tx-bank/target/
+/spring-013-tx-bank/target/
+/spring-014-junit/target/
+/spring-015-springAndMyBatis/target/
+/spring-017-MyspringAndMyBatis/target/
+/testMySpring/target/

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="CustomerServiceBean" class="com.GinElmaC.Service.CustomerService" autowire="byType"/>
+    <bean id="UserDaoBean" class="com.GinElmaC.Dao.UserDao"/>
+    <bean id="VipDaoBean" class="com.GinElmaC.Dao.VipDao"/>
+
+    <bean id="UserServiceBean" class="com.GinElmaC.Service.UserService">
+        <property name="userDao" ref="UserDaoBean"/>
+    </bean>
+
+
+
+</beans>

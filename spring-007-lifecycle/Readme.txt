@@ -1,0 +1,47 @@
+Bean的生命周期五步：
+    1.实例化Bean（调用Bean的无参构造）
+    2.Bean属性赋值（调用Bean的set方法）
+    3.初始化Bean（调用Bean中自己写的的init方法）
+    4.使用Bean
+    5.销毁Bean（调用Bean中自己写的destory方法）
+Bean的生命周期七步：
+    1.实例化Bean（调用Bean的无参构造）
+    2.Bean属性赋值（调用Bean的set方法）
+    3.调用“Bean后处理器”的before方法
+    4.初始化Bean（调用Bean中自己写的的init方法）
+    5.调用“Bean后处理器”的after方法
+    6.使用Bean
+    7.销毁Bean（调用Bean中自己写的destory方法）
+Bean的生命周期十步：
+    1.实例化Bean（调用Bean的无参构造）
+    2.Bean属性赋值（调用Bean的set方法）
+    3.检查Bean是否实现了Aware相关接口，如果实现了则调用相对应的方法
+    4.调用“Bean后处理器”的before方法
+    5.检查Bean是否实现了InitalizingBean接口，如果实现了则调用相对应的方法
+    6.初始化Bean（调用Bean中自己写的的init方法）
+    7.调用“Bean后处理器”的after方法
+    8.使用Bean
+    9.检查Bean是否实现了DisposableBean接口，如果实现了，则调用接口中的方法
+    10.销毁Bean（调用Bean中自己写的destory方法）
+    添加的这三步的特点：都是在检查你这个Bean是否实现了某些特定的接口，如果实现了这些接口，则Spring容器会调用这个接口中的方法。
+
+Bean的生命周期与scope的关系:
+    singleton:第一步User的无参构造执行
+              第二步User的set方法执行
+              Aware
+              第三步执行Bean后处理器的before方法
+              InitalzingBean
+              第四步的initBean
+              第五步执行Bean后处理器的after方法
+              第六步使用Bean
+              DisposableBean
+              第七步销毁Bean
+    prototype:第一步User的无参构造执行
+              第二步User的set方法执行
+              Aware
+              第三步执行Bean后处理器的before方法
+              InitalzingBean
+              第四步的initBean
+              第五步执行Bean后处理器的after方法
+              第六步使用Bean（到使用的位置其实就代表客户端程序拿到了创建的Bean对象，所以spring容器对该Bean对象就不管理生命周期了）
+    singleton模式下的spring会接管Bean的整个生命周期，而prototype模式下的spring不会管理Bean的销毁，即不会调用DisposableBean和自己写的destory方法。

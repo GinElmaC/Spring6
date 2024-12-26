@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="womanbean1" class="com.GinElmaC.Bean.Woman">
+        <property name="name" value="小花"/>
+    </bean>
+    <bean id="womanbean2" class="com.GinElmaC.Bean.Woman">
+        <property name="name" value="小a"/>
+    </bean>
+    <bean id="womanbean3" class="com.GinElmaC.Bean.Woman">
+        <property name="name" value="小b"/>
+    </bean>
+    <bean id="studentBean" class="com.GinElmaC.Bean.Student">
+        <property name="name" value="张三"/>
+        <property name="ct" ref="classBean"/>
+        <property name="ct.name" value="高三二班"/>
+        <property name="aihao">
+            <array>
+                <value>抽烟</value>
+                <value>喝酒</value>
+                <value>烫头</value>
+            </array>
+        </property>
+        <property name="women">
+            <array>
+                <ref bean="womanbean1"/>
+                <ref bean="womanbean2"/>
+                <ref bean="womanbean3"/>
+            </array>
+        </property>
+    </bean>
+    <bean id="classBean" class="com.GinElmaC.Bean.Class">
+    </bean>
+
+</beans>

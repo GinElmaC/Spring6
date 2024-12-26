@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring6-001-revelation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring6-002-first/pom.xml" />
+        <option value="$PROJECT_DIR$/spring6-003-injection/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-004-scope/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-005-scope/pom.xml" />
+        <option value="$PROJECT_DIR$/simple-factory/pom.xml" />
+        <option value="$PROJECT_DIR$/factory-method/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-006-bean-instantiation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-007-lifecycle/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-008-CycleIoc/pom.xml" />
+        <option value="$PROJECT_DIR$/review-reflect/pom.xml" />
+        <option value="$PROJECT_DIR$/mySpring/pom.xml" />
+        <option value="$PROJECT_DIR$/testMySpring/pom.xml" />
+        <option value="$PROJECT_DIR$/review-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-009-annotion/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-proxy-jdk/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-010-aspectj-aop-anno/pom.xml" />
+        <option value="$PROJECT_DIR$/spring6-011-realapp/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-012-tx-bank/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-013-tx-bank/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-014-junit/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-015-springAndMyBatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-017-MyspringAndMyBatis/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/spring-004-scope/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" project-jdk-name="23" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

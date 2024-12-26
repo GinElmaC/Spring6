@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--set的循环依赖-->
+    <!--<bean id="HusBean" class="com.GinElmaC.Bean.HusBand" scope="singleton">
+        <property name="name" value="husband111"/>
+        <property name="wife" ref="WifeBean"/>
+    </bean>
+    <bean id="WifeBean" class="com.GinElmaC.Bean.Wife" scope="prototype">
+        <property name="name" value="wife111"/>
+        <property name="husBand" ref="HusBean"/>
+    </bean>-->
+    <!--构造的循环依赖-->
+    <bean id="HusBean" class="com.GinElmaC.Bean.HusBand">
+        <constructor-arg index="0" value="husband111"/>
+        <constructor-arg index="1" ref="WifeBean"/>
+    </bean>
+    <bean id="WifeBean" class="com.GinElmaC.Bean.Wife">
+        <constructor-arg index="0" value="wife111"/>
+        <constructor-arg index="1" ref="HusBean"/>
+    </bean>
+</beans>

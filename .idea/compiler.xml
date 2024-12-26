@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="simple-factory" />
+        <module name="testMySpring" />
+        <module name="spring-010-aspectj-aop-anno" />
+        <module name="spring-014-junit" />
+        <module name="spring6-002-first" />
+        <module name="spring-012-tx-bank" />
+        <module name="dynamic-proxy-jdk" />
+        <module name="spring-007-lifecycle" />
+        <module name="spring-009-annotion" />
+        <module name="mySpring" />
+        <module name="review-annotation" />
+        <module name="spring-005-scope" />
+        <module name="factory-method" />
+        <module name="spring-015-springAndMyBatis" />
+        <module name="spring6-003-injection" />
+        <module name="spring-008-CycleIoc" />
+        <module name="spring-013-tx-bank" />
+        <module name="spring-006-bean-instantiation" />
+        <module name="review-reflect" />
+        <module name="spring-017-MyspringAndMyBatis" />
+        <module name="spring6-001-revelation" />
+        <module name="spring6-011-realapp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-004-scope" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--第一种注入date方法-->
+    <bean id="birth" class="com.GinElmaC.DateFactoryBean">
+        <property name="date" value="2005-04-11"/>
+    </bean>
+    <bean id="persion" class="com.GinElmaC.Persion">
+        <property name="birth" ref="birth"/>
+    </bean>
+
+    <!--spring提供的第一种实例化方法-->
+    <bean id="starFactoryBean" class="com.GinElmaC.StarFactory"/>
+    <!--spring提供的第二种实例化方法-->
+    <!--factory-method标签指定的是工厂类中的静态方法，也就是告诉Spring框架，让spring框架调用这个方法-->
+    <bean id="starBean" class="com.GinElmaC.StarFactory" factory-method="get"/>
+    <!--spring提供的实例化方式第三种，通过工厂方法模式-->
+    <bean id="gunFactory" class="com.GinElmaC.GunFactory"/>
+    <bean id="gunBean" factory-bean="gunFactory" factory-method="getGun"/>
+    <!--第二种与第三种的区别：第二种底层调用的是工厂中的静态方法，不需要实例化工厂对象，而第三种调用的是工厂里的具体方法，需要实例化工厂对象-->
+
+    <!--第四种方法，使用FactoryBean，这种方法其实就是第三种的简化版本-->
+    <!--通过一个普通的工厂Bean来获取一个普通的bean-->
+    <bean id="persionBean" class="com.GinElmaC.PersionFactoryBean"/>
+
+
+</beans>

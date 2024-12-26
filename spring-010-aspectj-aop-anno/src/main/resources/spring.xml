@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:component-scan base-package="com.GinElmaC.service"></context:component-scan>
+
+    <!--开启自动代理-->
+    <!--spring会扫描类，在扫描的时候会检查类上会不会有@Aspect注解，如果有，则为这个类生成一个代理-->
+    <!--proxy-target-class的意思：true表示默认使用CGLIB动态代理，false表示接口用JDK动态代理，类用CGLIB动态代理-->
+    <aop:aspectj-autoproxy proxy-target-class="true"/>
+
+</beans>

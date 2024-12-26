@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="persionBean" class="com.GinElmaC.Bean.persion">
+        <property name="names">
+            <list>
+                <value>张三</value>
+                <value>王五</value>
+                <value>张三</value>
+                <value>李四</value>
+                <value>张三</value>
+            </list>
+        </property>
+        <property name="addrs">
+            <set>
+                <value>南昌</value>
+                <value>北京</value>
+                <value>南昌</value>
+                <value>上海</value>
+                <value>北京</value>
+            </set>
+        </property>
+    </bean>
+
+</beans>

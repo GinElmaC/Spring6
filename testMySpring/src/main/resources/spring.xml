@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="vipBean" class="com.GinElmaC.Bean.Vip">
+        <property name="name" value="张三"/>
+        <property name="age" value="30"/>
+    </bean>
+    <bean id="OrderDao" class="com.GinElmaC.Bean.OrderDao"/>
+    <bean id="OrderService" class="com.GinElmaC.Bean.OrderService">
+        <property name="orderDao" ref="OrderDao"/>
+    </bean>
+
+</beans>

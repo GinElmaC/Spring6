@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="user" class="com.GinElmaC.Bean.User">
+        <property name="name" value="张三"/>
+        <property name="age" value="30"/>
+    </bean>
+    <bean id="userdao" class="com.GinElmaC.Bean.UserDao"/>
+    <bean id="userservice" class="com.GinElmaC.Bean.UserService">
+        <property name="userDao" ref="userdao"/>
+    </bean>
+
+</beans>
